@@ -169,25 +169,35 @@ Protected routes are secured using:
 store-rating-management-system/
 
 ├── frontend/
+│   ├── public/
 │   ├── src/
 │   │   ├── api/
 │   │   ├── components/
 │   │   ├── context/
 │   │   ├── pages/
-│   │   └── styles/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
 │   │
-│   └── package.json
+│   ├── package.json
+│   └── vite.config.js
 │
 ├── backend/
 │   ├── config/
 │   ├── controllers/
+│   ├── db/
 │   ├── middleware/
 │   ├── routes/
 │   ├── services/
 │   ├── utils/
-│   ├── seed/
-│   └── package.json
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
 │
+├── screenshots/
+│
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 

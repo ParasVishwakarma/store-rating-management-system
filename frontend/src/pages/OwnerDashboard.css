@@ -1,0 +1,84 @@
+.owner-hero {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.owner-store-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.owner-store-icon {
+  font-size: 2.4rem;
+}
+
+.owner-store-name .page-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.owner-avg-rating {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 32px 48px;
+  animation: slideUp 0.5s ease-out both;
+  animation-delay: 0.1s;
+}
+
+.owner-avg-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.owner-avg-stars {
+  margin: 4px 0;
+}
+
+.owner-avg-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.owner-avg-count {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.owner-ratings-section {
+  animation: slideUp 0.5s ease-out both;
+  animation-delay: 0.2s;
+}
+
+.owner-section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .owner-avg-rating {
+    padding: 24px 32px;
+  }
+
+  .owner-avg-number {
+    font-size: 2rem;
+  }
+
+  .owner-store-name .page-title {
+    font-size: 1.5rem;
+  }
+}

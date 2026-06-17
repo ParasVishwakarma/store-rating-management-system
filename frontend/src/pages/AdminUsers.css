@@ -1,0 +1,57 @@
+.admin-users-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.admin-users-header .page-header {
+  margin-bottom: 20px;
+}
+
+.user-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.user-detail-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.user-detail-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.user-detail-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.user-detail-value {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+.user-detail-rating {
+  color: var(--accent-orange);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-number {
+  font-size: 0.9rem;
+  font-weight: 600;
+}

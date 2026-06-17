@@ -1,0 +1,107 @@
+.user-search-bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.user-search-group {
+  flex: 1;
+  min-width: 220px;
+  position: relative;
+}
+
+.user-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.user-search-input {
+  padding-left: 40px !important;
+  height: 44px;
+}
+
+.store-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.store-card {
+  padding: 24px;
+  animation: slideUp 0.4s ease-out both;
+  transition: var(--transition);
+}
+
+.store-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-glass-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+.store-card-header {
+  margin-bottom: 12px;
+}
+
+.store-card-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.store-card-email {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.store-card-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.store-card-address svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.store-card-ratings {
+  background: var(--bg-glass);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.store-rating-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.store-rating-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.store-rating-divider {
+  height: 1px;
+  background: var(--border-glass);
+}
+
+@media (max-width: 768px) {
+  .store-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,54 @@
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  display: inline-block;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  line-height: 1;
+}
+
+.star-filled {
+  color: var(--accent-orange);
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.4);
+}
+
+.star-empty {
+  color: var(--text-muted);
+}
+
+.star-rating:not(.star-rating-readonly) .star {
+  cursor: pointer;
+}
+
+.star-rating:not(.star-rating-readonly) .star:hover {
+  transform: scale(1.25);
+}
+
+.star-hover {
+  color: var(--accent-orange) !important;
+  text-shadow: 0 0 12px rgba(245, 158, 11, 0.5);
+  transform: scale(1.2);
+}
+
+.star-clicked {
+  animation: pulse 0.4s ease-out;
+}
+
+.star-rating-value {
+  margin-left: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-orange);
+}
+
+.star-rating-readonly .star-filled {
+  cursor: default;
+}
+
+.star-rating-readonly .star-empty {
+  cursor: default;
+}
